@@ -41,10 +41,10 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
-        <ol key={location1}>
-          <li key="/location.India/">JAIPUR</li>
-          <li key="/location.India/">Varanasi</li>
-          <li key="/location.India/">Mount Abu</li>
+        <ol>
+          <li key="India">JAIPUR</li>
+          <li key="India">Varanasi</li>
+          <li key="India">Mount Abu</li>
         </ol>
       </div>
     )

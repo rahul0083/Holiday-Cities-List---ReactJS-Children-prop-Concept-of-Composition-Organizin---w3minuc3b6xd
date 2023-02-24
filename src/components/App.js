@@ -38,15 +38,17 @@ class App extends Component {
   }
 
   render() {
+    const listitems=this.cityList.filter(list1=>list1.country==='India').map((list,index)=>(
+        <li key={index} >{list.name}</li>
+
+      ))
     return (
-      <div id="main">
+      <div  id="main">
         {/* Do not remove the main div */}
-        <ol>
-          <li key="India">JAIPUR</li>
-          <li key="India">Varanasi</li>
-          <li key="India">Mount Abu</li>
-        </ol>
+        <ol >{listitems}</ol>
       </div>
+      
+     
     )
   }
 }
